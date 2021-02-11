@@ -19,7 +19,6 @@ label
     color:black;
     background-color:white;
     border-radius:25px 25px 25px 25px;
-    width:300px;
     padding-left:20px;
     padding-right:20px;
     padding-top:20px;
@@ -29,4 +28,9 @@ label
 {
     margin:0 auto;
     position:relative;
+    width:300px;
+}
+.inputline
+{
+    padding-bottom:5px;
 }
