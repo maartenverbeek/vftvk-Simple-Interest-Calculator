@@ -1,9 +1,9 @@
 function computeResult()
 {
-    var principal = document.getElementById("principal").value;
-    var rate = document.getElementById("rate").value;
-    var years = document.getElementById("years").value;
-    var interest = principal * years * rate / 100;
+    const principal = document.getElementById("principal").value;
+    const rate = document.getElementById("rate").value;
+    const years = document.getElementById("years").value;
+    const interest = principal * years * rate / 100;
     var futureyear = parseInt(years) + new Date().getFullYear();
     var result = document.getElementById("result");
     result.innerHTML = 
@@ -17,9 +17,9 @@ function computeResult()
 
 function displayRate()
 {
-    var rate = document.getElementById("rate").value;
-    var rateValue = document.getElementById("rateValue");
-    rateValue.textContent = rate + " %";
+    var r = document.getElementById("rate").value;
+    var rValue = document.getElementById("rateValue");
+    rValue.textContent = r + " %";
 }
 
 function validatePrincipal()
@@ -30,5 +30,4 @@ function validatePrincipal()
         alert("Enter a positive number");
         principalInput.focus();
     }
-    rateValue.innerText = rate + " %";
 }
