@@ -3,7 +3,7 @@ function computeResult()
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
-    const interest = principal * years * rate / 100;
+    var interest = principal * years * rate / 100;
     var futureyear = parseInt(years) + new Date().getFullYear();
     var result = document.getElementById("result");
     result.innerHTML = 
